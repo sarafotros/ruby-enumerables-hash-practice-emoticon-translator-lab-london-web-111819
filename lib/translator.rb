@@ -1,12 +1,14 @@
 # require modules here
-
 require "yaml"
-emoticon = YAML.load_file ('emoticon.rb')
 
 def load_library
-  # code goes here
-  load_library = YAML.load_file('emoticon.rb')
-  load_library
+  emoticon = YAML.load_file('emoticon.rb')
+  new_hash ={
+    'get_meaning' => {},
+    'get_emoticon' => {}
+  }
+  
+  
 end
 
 def get_japanese_emoticon
